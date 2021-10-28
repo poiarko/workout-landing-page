@@ -1,0 +1,337 @@
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  font-weight: 400
+  font-size: 12px
+  line-height: 18px
+  background: #1F1C26
+  color: #0D0D0D5C
+
+.overlay__blur
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+  backdrop-filter: blur(5px)
+
+a
+  text-decoration: none
+
+li
+  list-style-type: none
+
+.btn
+  padding: 7px 19px
+  font-family: 'Poppins', sans-serif
+  font-weight: 600
+  font-size: 14px
+  line-height: 21px
+  color: #FFFFFF
+  background: #F24B88
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  border: none
+  outline: none
+  cursor: pointer
+  text-transform: uppercase
+
+.intro
+
+  &__inner
+    padding-bottom: 74px
+
+  &__title
+    position: relative
+    font-weight: 700
+    font-size: 30px
+    line-height: 45px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-bottom: 95px
+
+    &::after
+      position: absolute
+      content: ''
+      background: #59253E
+      width: 61px
+      height: 5px
+      left: 0
+      bottom: 0
+
+  &__card-wrap
+    display: flex
+
+  &__card-wrap-mobile
+    display: flex
+
+.container
+  max-width: 1244px
+  margin: 0 auto
+  padding: 0 40px
+
+.header
+  width: 100%
+  padding: 65px 0 39px 0
+
+  &__logo
+    max-width: 237px
+
+  &__btn
+    display: none
+    width: 20px
+    height: 18px
+    position: relative
+
+    &::after,
+    &::before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 2px
+      background: #F2F2F2
+      left: 0
+      border-radius: 3px
+
+    &::before
+      top: 0
+
+    &::after
+      bottom: 0
+
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #F2F2F2
+      position: absolute
+      left: 0
+      top: 8px
+
+  &__inner
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-height: 122px
+
+  &__inner-wrap
+    display: inline-flex
+    align-items: center
+
+.menu
+  margin-left: auto
+
+  &__list
+    display: flex
+
+  &__list-item
+    border-bottom: 5px solid transparent
+
+    &:hover
+      border-bottom: 5px solid #59253E
+
+  &__list-item + .menu__list-item
+    margin-left: 40px
+
+  &__list-link
+    font-size: 14px
+    line-height: 21px
+    text-transform: uppercase
+    color: #F2F2F2
+
+.user-nav
+  display: flex
+  margin-left: 40px
+
+  &__btn
+    color: #F2F2F2
+
+    &:first-child
+      padding: 4px 9px
+      background: #F24B88
+
+    &:last-child
+      padding: 4px
+      border: 1px solid #F2F2F2
+
+.card
+  display: flex
+  flex-direction: column
+  max-width: 276px
+  max-height: 404px
+
+  & + .card
+    margin-left: 25px
+
+  &__img-wrap
+    max-height: 174px
+    height: 100%
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: none
+
+    &_first
+      object-position: 74% 76%
+      zoom: 22%
+
+    &_second
+      object-position: 0% 10%
+      zoom: 64%
+
+    &_third
+      object-position: 50% 30%
+      zoom: 45%
+
+    &_fourth
+      object-position: 53% 28%
+      zoom: 100%
+
+  &__info
+    padding: 21px 13px 12px 13px
+    background: #F2F2F2
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25)
+
+  &__title
+    font-style: italic
+    font-weight: 700
+    font-size: 18px
+    line-height: 27px
+    text-transform: uppercase
+    color: #0D0D0D
+    &_mobile
+      display: none
+
+  &__subtitle
+    font-style: italic
+    font-weight: 600
+    font-size: 13px
+    line-height: 13px
+    text-transform: capitalize
+    color: #332F3C
+    margin-bottom: 10px
+
+  &__text
+    text-align: center
+    height: 100px
+    overflow: hidden
+
+  &__btn
+    display: block
+    margin: 12px 0 0 auto
+    &_mobile
+      display: none
+
+.footer
+
+  &__inner
+    padding: 37px 0 15px 0
+    border-top: 1px solid #F2F2F2
+    border-bottom: 1px solid #F2F2F2
+    display: flex
+    justify-content: space-between
+
+  &__logo
+    max-width: 237px
+    margin-bottom: 16px
+
+  &__inner-content
+    max-width: 375px
+
+  &__inner-content-text
+    color: #FFFFFF
+    margin-top: 15px
+    margin-bottom: 10px
+
+  &__icon
+    width: 39px
+    height: 39px
+
+  &__icon + .footer__icon
+    margin-left: 8px
+
+  &__inner-content-social
+    display: flex
+    align-items: center
+
+  &__menu-wrap
+    display: flex
+    justify-content: space-between
+
+  &__menu-block
+    display: flex
+    width: 50%
+    justify-content: space-between
+
+  &__menu
+    max-width: 125px
+    margin-right: 50px
+
+  &__menu-title,
+  &__form-title
+    font-weight: bold
+    font-size: 18px
+    line-height: 27px
+    color: #FFFFFF
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  &__list
+    list-style: none
+
+  &__list-item
+    margin-bottom: 15px
+
+  &__list-link
+    font-size: 14px
+    line-height: 21px
+    text-transform: capitalize
+    color: #FFFFFF
+
+  &__form
+    max-width: 321px
+
+  &__form-title
+    margin-bottom: 25px
+
+  &__form-input
+    display: inline-block
+    width: 100%
+    height: 36px
+    padding: 8px 26px
+    margin-bottom: 14px
+    background: #FFFFFF
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 5px
+    border: 3px solid transparent
+    outline: none
+
+    &::placeholder
+      font-size: 13px
+      font-weight: 500
+      line-height: 19px
+      text-transform: capitalize
+      color: #7B7B7B
+
+    &_error
+      border-color: #ff0000
+    
+
+  &__form-btn
+    padding: 6px 12px
+
+  &__copyright
+    padding: 35px 0 65px 0
+    display: flex
+    justify-content: space-between
+
+  &__copyright-text
+    font-weight: 300
+    color: #FFFFFF
+    &::nth-child(2)
+      line-height: 14px
+
+@import './media.sass'

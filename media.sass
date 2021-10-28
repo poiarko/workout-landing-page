@@ -1,0 +1,255 @@
+@media ( max-width: 992px )
+  .container
+    padding: 0 20px
+
+  .header
+    padding: 30px 0 40px
+
+    &__logo
+      max-width: 200px
+
+    &__inner-wrap
+      align-items: flex-end
+      flex-direction: column
+
+  .menu
+    order: 1
+    width: 100%
+
+  .menu__list
+    justify-content: flex-end
+    padding-top: 40px
+
+  .intro
+    &__card-wrap
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+
+    &__card-wrap-mobile
+      justify-content: center
+      flex-wrap: wrap
+
+  .card
+    margin: 25px
+
+  .footer
+
+    &__menu
+      margin-right: 50px
+
+    &__inner-content-text
+      margin-right: 30px
+
+@media ( max-width: 768px )
+  .header__logo
+    max-width: 170px
+
+  .header__btn
+    display: none
+
+  .intro
+    &__title
+      font-size: 26px
+      line-height: 39px
+
+  .footer
+    &__inner
+      display: flex
+      flex-direction: column
+    &__menu-wrap
+      display: flex
+      margin-top: 35px
+      justify-content: space-between
+
+@media ( max-width: 680px )
+  .header__logo
+    max-width: 120px
+
+  .menu__list
+    padding-top: 20px
+
+@media ( max-width: 576px )
+  .container
+    padding: 0 14px
+
+  .header
+    padding: 14px 0 40px
+
+    &__logo
+      margin-bottom: 20px
+
+    &__inner
+      position: relative
+
+    &__btn
+      display: block
+      position: absolute
+      right: 0
+
+    &__inner
+      display: flex
+      max-height: 55px
+
+    &__inner-wrap
+      display: flex
+      position: absolute
+      width: 143px
+      padding: 30px 15px 20px
+      flex-direction: column-reverse
+      right: 0
+      top: 0
+      text-align: center
+      background: #59253E
+      box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25)
+      border-radius: 20px 0px 0px 20px
+      transition: all .6s
+      transform: translateY(-300%)
+      z-index: 1000
+
+      &_active
+        transition: all .6s
+        transform: translateY(0%)
+
+    &__logo
+      max-width: 107px
+
+  .menu
+
+    &__list
+      display: block
+      text-align: center
+
+    &__list-link
+      display: block
+      color: #F2F2F2
+      font-size: 12px
+      line-height: 18px
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+    &__list-item + .menu__list-item
+      margin-left: 0
+      padding-top: 15px
+      margin-bottom: 0
+
+    &__list-item
+      &:last-child
+        padding-bottom: 63px
+
+  .user-nav
+    margin-left: 0
+
+    &__btn
+      font-size: 12px
+      line-height: 18px
+
+  .intro
+
+    &__inner
+      padding-bottom: 0
+
+    &__title
+      text-align: center
+      margin-bottom: 30px
+      &::after
+        width: 131px
+        height: 5px
+        left: 50%
+        transform: translate(-50%, 5px)
+
+    &__card-wrap
+      display: flex
+      flex-direction: column
+      padding-bottom: 32px
+
+    &__card-wrap-mobile
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+
+  .card
+    margin: 0
+    margin-bottom: 38px
+    & + .card
+      margin-left: 10px
+
+    &__img-wrap
+      width: 157px
+      height: 157px
+      margin: 0 auto
+
+    &__img
+      border-radius: 20px
+
+    &__info
+      padding-top: 0
+      display: none
+
+    &__title
+      text-align: center
+      color: #E5E5E5
+      &_mobile
+        display: flex
+        justify-content: center
+
+    &__btn_mobile
+      display: block
+      padding: 10px 12px
+      margin: 20px auto 0
+
+  .footer
+
+    &__inner-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0 auto
+
+    &__inner-content-social
+      margin-bottom: 35px
+
+    &__inner-content-text
+      max-width: 272px
+      margin-bottom: 26px
+      margin-right: 0
+      text-align: center
+
+    &__menu-wrap
+      margin-top: 0
+      flex-direction: column
+
+    &__menu-block
+      justify-content: space-between
+      width: auto
+      order: 2
+
+    &__menu
+      margin-right: 0
+
+    &__form
+      order: 1
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+
+    &__form-title
+      text-align: center
+
+    &__form-input
+      &::placeholder
+        text-align: center
+
+    &__form-btn
+      display: block
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+
+    &__copyright
+      padding-top: 20px
+      flex-direction: column
+      align-items: center
+
+    &__copyright-text
+      &:last-child
+        margin-top: 20px
